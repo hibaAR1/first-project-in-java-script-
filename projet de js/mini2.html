@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI PROJET 2</title>
+    <link rel="stylesheet" href="g2.css">
+  
+</head>
+<body>
+
+    <!-- start navigation bar -->
+<div class="navbar">
+    <div class="container">
+
+<ul class="links">
+    <li class="active"><a href="g.html" style="text-decoration:none;color:black;" >Home</a></li>
+    <li ><a href="courses.html" style="text-decoration:none;color:black;" >courses</a></li>
+    <li><a href="about.html" style="text-decoration:none;color:black;" >about</a></li>
+</ul>
+</div>
+</div>
+</div>
+    <!-- end navigation bar -->
+
+    <!-- start filtrage d image-->
+<!-- search-->
+<div class="wrapper">
+    <div id="search-container">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search coursses name here"
+      />
+      <button id="search">Search</button>
+    </div>
+<!--end search -->
+
+
+
+<!-- start all  html css.....-->
+<p class="categorie">Categorie</p>
+<div id="buttons">
+    <button class="button-value" onclick="filterProduct('all')">All</button>
+    <br><br>
+    <button class="button-value" onclick="filterProduct('html')">Html</button>
+      <br><br>
+    <button class="button-value" onclick="filterProduct('css')">Css</button>
+   <br><br>
+    <button class="button-value" onclick="filterProduct('js')">Js</button>
+   <br><br>
+    <button class="button-value" onclick="filterProduct('php')">Php</button>
+  <br><br>
+
+  </div>
+  <div id="products"></div>
+</div>
+
+<!-- end all html css ...-->
+
+    <!-- end filtrage d image -->
+  <script src="g2.js"></script>
+</body>
+</html>

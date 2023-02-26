@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-first:#1ec36dd9;
+    --color-second:#f0f0f0;
+    --color-white:#fff;
+    --color-success:#2ecc71;
+    --color-error:#e74c3c;
+}
+body{
+    
+    font-family: "Open sabs" sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+input{
+  
+    background-color: rgba(255,255,255,.5);
+}
+.container{
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(23, 57, 179, 0.5);/*le cadre de signe up*/
+    width: 400px;
+    max-width: 100%;
+}
+.header{
+
+    padding: 20px 40px;
+}
+.header h2{
+    /*annimation h2*/
+    margin: 0;
+    text-align: center;
+   
+}
+.form{
+    padding: 30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+label{
+    font-size: large;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+.form-control input{
+    border:  2px solid var(--color-second);
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+.form-control i{
+    position: absolute;
+    top: 33px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form button{
+    /*background: var(--color-first);*/
+   
+   /* color: var(--color-white);*/
+    display: block;
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+.form-control.success input{
+    border-color: var(--color-success);
+}
+.form-control.error input{
+    border-color: var(--color-error);
+}
+.form-control.success i.fa-check-circle{
+    color: var(--color-success);
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation{
+    color: var(--color-error);
+    visibility: visible;
+}
+.form-control.error small{
+    color: var(--color-error);
+    visibility: visible;
+}
+/*style backround animation*/
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-30deg, #5290ee, #593ce7, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 20s ease infinite ;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+    }
+    /*end animation*/
+    /* animation button*/
+    
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+   
+   background-color:transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(-30deg, #5290ee, blue, #23a6d5, #23d5ab );
+    position: absolute;
+    top: -2px;
+    left:-2px;
+  
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+
+
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/*end animation button*/

@@ -1,0 +1,170 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+overflow-x: hidden;
+}
+.container{
+
+    width:1200px;
+    margin:auto;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+/*start navbar*/
+.navbar{
+  background-color:#edf3fb;
+ overflow: hidden;
+ 
+}
+
+.navbar .links{
+
+  width:500%;
+  padding-left: 900px;
+  margin-top: 15px;
+
+
+}
+.navbar .links li {
+  display: inline-block;
+  padding: 10px 15px;
+ border-bottom: 2px solid transparent;
+
+}
+
+
+.navbar .links li.active{
+  color:blue;
+  border-bottom: 2px solid blue;
+  display: inline-block;
+}
+.navbar .links li:hover{
+  color:blue;
+  border-bottom: 2px solid blue;
+}
+
+
+/*end navbar*/
+
+
+/* filtrage*/
+
+/* search button*/
+body {
+    /*background-color: gainsboro;*/
+  }
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #search-container {
+    margin: 1em 0;
+  }
+  #search-container input {
+    background-color: transparent;
+    width: 15%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+  }
+  #search-container input:focus {
+    border-bottom-color:blue;
+  }
+  #search-container button {
+    padding: 1em 2em;
+    background-color:blue;
+    color: #ffffff;
+    border-radius: 2px;
+    margin-top: 1em;
+
+  }
+  /* end of search */
+
+/*button all ...*/
+
+.button-value {
+    border: 1px solid balck ;
+    padding: 0.5em 1em;
+  
+    background-color: transparent;
+    color:black;
+    cursor: pointer;
+  }
+  .categorie{
+    font-size: larger;
+    font-weight: 1000;
+
+  }
+
+
+
+
+
+  #products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 2em;
+    padding: 2em 2;
+  }
+  .card {
+    background-color: #ffffff;
+    max-width: 20em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+    position:relative;
+    top: -250px;
+      left: 150px;
+  }
+  .image-container {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+  }
+  .container {
+    padding-top: 1em;
+    color: #110f29;
+  }
+  .container h5 {
+    font-weight: 500;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
